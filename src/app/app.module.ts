@@ -30,7 +30,8 @@ import { ContractsComponent } from './contracts/contracts.component';
     LogOutComponent,
     LogoComponent,
     OptionsComponent,
-    ContractsComponent
+    ContractsComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
