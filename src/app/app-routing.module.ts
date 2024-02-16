@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { OverviewComponent } from './overview/overview.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { VendorsComponent } from './vendors/vendors.component';
 import { DisposalsComponent } from './disposals/disposals.component';
 import { RequestsComponent } from './requests/requests.component';
@@ -11,8 +11,8 @@ import { LogOutComponent } from './log-out/log-out.component';
 import { OptionsComponent } from './options/options.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'overview', pathMatch: 'full' },
-  {path: 'overview', component: OverviewComponent },
+  {path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+  {path: 'dashboard', component: DashboardComponent },
   {path: 'vendors', component: VendorsComponent },
   {path: 'disposals', component: DisposalsComponent },
   {path: 'requests', component: RequestsComponent },

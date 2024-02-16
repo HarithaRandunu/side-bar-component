@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BodyComponent } from './body/body.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
-import { OverviewComponent } from './overview/overview.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { VendorsComponent } from './vendors/vendors.component';
 import { DisposalsComponent } from './disposals/disposals.component';
 import { RequestsComponent } from './requests/requests.component';
@@ -21,7 +21,7 @@ import { ContractsComponent } from './contracts/contracts.component';
     AppComponent,
     BodyComponent,
     SidenavComponent,
-    OverviewComponent,
+    DashboardComponent,
     VendorsComponent,
     DisposalsComponent,
     RequestsComponent,

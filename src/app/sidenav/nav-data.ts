@@ -1,47 +1,47 @@
 export const navbarData = [
     {
-        routeLink: 'overview',
-        icon: 'fas fa-home',
-        label: 'Overview'
+        routeLink: 'dashboard',
+        icon: 'fal fa-home',
+        label: 'Dashboard'
     },
     {
         routeLink: 'vendors',
-        icon: 'fas fa-users',
+        icon: 'fal fa-users',
         label: 'Vendors'
     },
     {
         routeLink: 'disposals',
-        icon: 'fas fa-trash-restore-alt',
+        icon: 'fal fa-trash-restore-alt',
         label: 'Disposals'
     },
     {
         routeLink: 'requests',
-        icon: 'fas fa-pen-square',
+        icon: 'fal fa-solid fa-inbox',
         label: 'Requests'
     },
     {
         routeLink: 'notifications',
-        icon: 'fas fa-bell',
+        icon: 'fal fa-bell',
         label: 'Notifications'
     },
     {
         routeLink: 'reports',
-        icon: 'fas fa-file-invoice',
+        icon: 'fal fa-regular fa-flag',
         label: 'Reports'
     },
     {
         routeLink: 'contracts',
-        icon: 'fas fa-file-contract',
+        icon: 'fal fa-file-contract',
         label: 'Contracts'
     },
     {
         routeLink: 'options',
-        icon: 'fas fa-cog',
+        icon: 'fal fa-cog',
         label: 'Options'
     },
     {
         routeLink: 'log-out',
-        icon: 'fas fa-door-open',
+        icon: 'fal fa-door-open',
         label: 'Log Out'
     }
 ] 
