@@ -1,7 +1,27 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { OverviewComponent } from './overview/overview.component';
+import { VendorsComponent } from './vendors/vendors.component';
+import { DisposalsComponent } from './disposals/disposals.component';
+import { RequestsComponent } from './requests/requests.component';
+import { NotificationsComponent } from './notifications/notifications.component';
+import { ReportsComponent } from './reports/reports.component';
+import { ContractsComponent } from './contracts/contracts.component';
+import { LogOutComponent } from './log-out/log-out.component';
+import { OptionsComponent } from './options/options.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path: '', redirectTo: 'overview', pathMatch: 'full' },
+  {path: 'overview', component: OverviewComponent },
+  {path: 'vendors', component: VendorsComponent },
+  {path: 'disposals', component: DisposalsComponent },
+  {path: 'requests', component: RequestsComponent },
+  {path: 'notifications', component: NotificationsComponent },
+  {path: 'reports', component: ReportsComponent },
+  {path: 'contracts', component: ContractsComponent },
+  {path: 'options', component: OptionsComponent },
+  {path: 'log-out', component: LogOutComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
