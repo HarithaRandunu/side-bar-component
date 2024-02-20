@@ -1,0 +1,22 @@
+@import "theme.scss";
+
+.main-wrapper {
+  // flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  display: flex;
+  width: 100%;
+  background-color: $bg-white;
+}
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  min-height: 100vh;
+  min-width: 0;
+  overflow: hidden;
+  width: calc(100% - 15.15rem);
+  min-width: calc(100% - 240px);
+}

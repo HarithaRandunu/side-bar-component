@@ -3,13 +3,17 @@
         <button class="logo mx-3" *ngIf="!collapsed" (click)="toggleCollapse()">
             <i class="fas fa-solid fa-bars"></i>
         </button>
-        <button class="logo" *ngIf="collapsed">
-            <a class="mx-3 bg-white" style="padding: 1rem;" href="#">
-                <img src="https://corzent.com/images/corzent-new-long-p-500.png" height="30" alt="" loading="lazy" />
+            <a class="logo  mx-3 bg-white" *ngIf="collapsed" href="#">
+                <img 
+                    src="https://corzent.com/images/corzent-new-long-p-500.png" 
+                    height="30" 
+                    alt="" 
+                    loading="lazy" 
+                    class="logo-image"
+                />
             </a>
-        </button>
         
-        <button class="btn-close" *ngIf="collapsed" (click)="closeSidenav()">
+        <button class="btn-close" @rotate *ngIf="collapsed" (click)="closeSidenav()">
             <i class="fal fa-times close-icon"></i>
         </button>
     </div>
@@ -20,7 +24,9 @@
                 [routerLinkActiveOptions]="{exact: true}"
             >
                 <i class="sidenav-link-icon" [class]="data.icon"></i>
-                <span class="sidenav-link-text" *ngIf="collapsed">{{data.label}}</span>
+                <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">
+                    {{data.label}}
+                </span>
             </a>
         </li>
     </ul>
