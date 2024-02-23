@@ -23,6 +23,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { CdkMenuModule } from '@angular/cdk/menu';
 import { AssetsComponent } from './assets/assets.component';
+import { EmployeesComponent } from './employees/employees.component';
+import { AssetCardComponent } from './asset-card/asset-card.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
@@ -42,7 +45,9 @@ import { AssetsComponent } from './assets/assets.component';
     DashboardComponent,
     ProfileSidebarComponent,
     HeaderComponent,
-    AssetsComponent
+    AssetsComponent,
+    EmployeesComponent,
+    AssetCardComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +58,8 @@ import { AssetsComponent } from './assets/assets.component';
     CdkMenuModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })

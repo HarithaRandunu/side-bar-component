@@ -10,14 +10,24 @@ export const navbarData = [
         label: 'Assets'
     },
     {
-        routeLink: 'vendors',
-        icon: 'fal fa-users',
-        label: 'Vendors'
-    },
-    {
         routeLink: 'disposals',
         icon: 'fal fa-trash-restore-alt',
         label: 'Disposals'
+    },
+    {
+        routeLink: 'employees',
+        icon: 'fal fa-solid fa-users',
+        label: 'Employees'
+    },
+    {
+        routeLink: 'vendors',
+        icon: 'fas fa-user-tie',
+        label: 'Vendors'
+    },
+    {
+        routeLink: 'contracts',
+        icon: 'fal fa-file-contract',
+        label: 'Contracts'
     },
     {
         routeLink: 'requests',
@@ -34,19 +44,14 @@ export const navbarData = [
         icon: 'fal fa-regular fa-flag',
         label: 'Reports'
     },
-    {
-        routeLink: 'contracts',
-        icon: 'fal fa-file-contract',
-        label: 'Contracts'
-    },
-    {
-        routeLink: 'options',
-        icon: 'fal fa-cog',
-        label: 'Options'
-    },
-    {
-        routeLink: 'log-out',
-        icon: 'fal fa-door-open',
-        label: 'Log Out'
-    }
+    // {
+    //     routeLink: 'options',
+    //     icon: 'fal fa-cog',
+    //     label: 'Options'
+    // },
+    // {
+    //     routeLink: 'log-out',
+    //     icon: 'fal fa-door-open',
+    //     label: 'Log Out'
+    // }
 ] 

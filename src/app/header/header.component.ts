@@ -1,6 +1,9 @@
 import { style } from '@angular/animations';
 import { isPlatformBrowser } from '@angular/common';
 import { Component, HostListener, Inject, Input, OnInit, PLATFORM_ID } from '@angular/core';
+import { notifications, userDetails } from './header-dummy-data';
+import { MatMenuTrigger } from '@angular/material/menu';
+import { CdkMenuTrigger } from '@angular/cdk/menu';
 
 @Component({
   selector: 'app-header',
@@ -10,12 +13,18 @@ import { Component, HostListener, Inject, Input, OnInit, PLATFORM_ID } from '@an
 export class HeaderComponent implements OnInit{
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
+  
 
   @Input() collapsed = false;
   @Input() screenWidth = 0;
 
   canShowSearchAsOverlay = false;
   class_visibility = false;
+  overlayClose: boolean = true;
+
+  notifications = notifications;
+  // userItems = userItems;
+  userDetails = userDetails;
 
   @HostListener('window:resize', ['$event'])
   onResize(): void {
@@ -102,5 +111,27 @@ export class HeaderComponent implements OnInit{
 
     return styleClass;
   }
+
+  overlayOpenResult(): void {
+    this.overlayClose = false;
+  }
+
+  overlayCloseResult(): void {
+    this.overlayClose = true;
+  }
+
+  overlayCloseFunction(): string {
+    let styleClass = '';
+    if(!this.overlayClose) {
+      styleClass = 'overlay-logOut-fall';
+    }
+    else {
+      styleClass = 'overlay-logOut-fallOpposite';
+    }
+
+    return styleClass
+
+  }
+  
 
 }

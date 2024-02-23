@@ -10,12 +10,14 @@ import { ContractsComponent } from './contracts/contracts.component';
 import { LogOutComponent } from './log-out/log-out.component';
 import { OptionsComponent } from './options/options.component';
 import { AssetsComponent } from './assets/assets.component';
+import { EmployeesComponent } from './employees/employees.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   {path: 'dashboard', component: DashboardComponent },
   {path: 'assets', component: AssetsComponent },
   {path: 'vendors', component: VendorsComponent },
+  {path: 'employees', component: EmployeesComponent },
   {path: 'disposals', component: DisposalsComponent },
   {path: 'requests', component: RequestsComponent },
   {path: 'notifications', component: NotificationsComponent },
