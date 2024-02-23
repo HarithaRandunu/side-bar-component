@@ -10,14 +10,19 @@ export const navbarData = [
         label: 'Assets'
     },
     {
+        routeLink: 'disposals',
+        icon: 'fal fa-trash-restore-alt',
+        label: 'Disposals'
+    },
+    {
         routeLink: 'vendors',
         icon: 'fal fa-users',
         label: 'Vendors'
     },
     {
-        routeLink: 'disposals',
-        icon: 'fal fa-trash-restore-alt',
-        label: 'Disposals'
+        routeLink: 'contracts',
+        icon: 'fal fa-file-contract',
+        label: 'Contracts'
     },
     {
         routeLink: 'requests',
@@ -33,11 +38,6 @@ export const navbarData = [
         routeLink: 'reports',
         icon: 'fal fa-regular fa-flag',
         label: 'Reports'
-    },
-    {
-        routeLink: 'contracts',
-        icon: 'fal fa-file-contract',
-        label: 'Contracts'
     },
     {
         routeLink: 'options',

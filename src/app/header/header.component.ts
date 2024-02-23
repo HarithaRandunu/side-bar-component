@@ -1,6 +1,7 @@
 import { style } from '@angular/animations';
 import { isPlatformBrowser } from '@angular/common';
 import { Component, HostListener, Inject, Input, OnInit, PLATFORM_ID } from '@angular/core';
+import { notifications, userDetails } from './header-dummy-data';
 
 @Component({
   selector: 'app-header',
@@ -16,6 +17,10 @@ export class HeaderComponent implements OnInit{
 
   canShowSearchAsOverlay = false;
   class_visibility = false;
+
+  notifications = notifications;
+  // userItems = userItems;
+  userDetails = userDetails;
 
   @HostListener('window:resize', ['$event'])
   onResize(): void {
